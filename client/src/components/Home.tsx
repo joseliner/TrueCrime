@@ -4,23 +4,38 @@ import { Register } from '../auth/Register'
 import './Home.css'
 
 /* eslint-disable */
-interface Props {
-  onChange: (str: string) => void;
-  placeholder: string;
-  name: string;
-  value?: string;
-}
 
-export const Home: React.FC<Props> = ({ onChange: onchange, placeholder: 'placeholder', name: 'name', value: 'value' ? = "" : }); =>
-{
+interface Props {
+  value?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  name?: string;
+}
+ 
+export const Home: React.FC<Props> = ({ value, onChange, placeholder, name }) => {
   return (
+    
     <React.Fragment>
-        
       <h1>Weather App</h1>
-      {/* <p>Want to sign up?<Register/></p>
-     <p>Already Signed up? <Login /></p>   */}
+      <div>
+      <input className="input" type="text"
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        name={name}
+    />
+       </div>
+
+       <button
+      className=''
+      onClick={() => console.log('clicked')}>
+        Search
+     </button>
     </React.Fragment>
   );
-}
+};
 
-export default Home;
+
+
+
+
