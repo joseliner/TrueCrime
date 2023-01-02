@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Login } from '../auth/Login'
 import { Register } from '../auth/Register'
 import './Home.css'
@@ -13,6 +13,12 @@ interface Props {
 }
  
 export const Home: React.FC<Props> = ({ value, onChange, placeholder, name }) => {
+
+  
+    const [age, setAge] = useState(28);
+  console.log(age);
+  
+
   return (
     
     <React.Fragment>
@@ -36,6 +42,7 @@ export const Home: React.FC<Props> = ({ value, onChange, placeholder, name }) =>
 };
 
 
+// cdfdf
 
 
 

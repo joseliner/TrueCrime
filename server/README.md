@@ -17,3 +17,5 @@ install prettier
 
 to get prettier to play nice w eslint add
 `npm i -D eslint-plugin-prettier eslint-config-prettier`
+
+npm run dev for server
