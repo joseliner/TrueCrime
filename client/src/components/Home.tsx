@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { Login } from '../auth/Login'
-import { Register } from '../auth/Register'
+import React, { useState, useEffect } from 'react'
 import './Home.css'
+
 
 /* eslint-disable */
 
@@ -14,15 +13,47 @@ interface Props {
  
 export const Home: React.FC<Props> = ({ value, onChange, placeholder, name }) => {
 
-  
-    const [age, setAge] = useState(28);
-  console.log(age);
+  //usestate
+  const UsingFetch = () => {
+    const [killers, setKillers] = useState([]) 
+
+    const fetchData = () =>  {
+      fetch("src/mockApi/truecrime.json")
+        .then(response => {
+          return response.json()
+        })
+        .then(data => {
+          setKillers(data)
+          console.log(data);
+        })
+    }
+  }
+
+  //useeffect ( fetch inside & set the response to the state to log to the jsx below ( to the screen))
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  return (
+    <div>
+      {data.length > 0 && (
+        <ul>
+          {users.map(user => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}
+
+export default UsingFetch
   
 
   return (
     
     <React.Fragment>
-      <h1>Weather App</h1>
+      <h1>True Crime</h1>
       <div>
       <input className="input" type="text"
         value={value}
@@ -42,7 +73,9 @@ export const Home: React.FC<Props> = ({ value, onChange, placeholder, name }) =>
 };
 
 
-// ksdfn
 
 
+function fetchData() {
+  throw new Error('Function not implemented.');
+}
 

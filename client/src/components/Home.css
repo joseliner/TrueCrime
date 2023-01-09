@@ -4,5 +4,21 @@ h1 {
 
 .input{
     margin: 0 auto;
+    padding: 0.2rem;
     display: block;
+    border-color: black;
+    border-radius: 1rem;
   }
+
+  button {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: block;
+    border-color: black;
+    border-width: 0.1rem;
+    border-radius: 1rem;
+}
+
+body {
+    background-color: grey;
+}
