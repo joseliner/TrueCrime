@@ -22,11 +22,13 @@ interface ISuspect {
 }
 
   //usestate
-    const [viewKillers, saveKillers] = useState([]) 
-    const [searchInput, storeSearchInput] = useState([])
+    // const [viewKillers, saveKillers] = useState([]) 
+    // const [searchInput, storeSearchInput] = useState([])
+    const [viewKillers, saveKillers] = useState<ISuspect[]>([])
+    const [searchInput, storeSearchInput] = useState("")
 
     const fetchData = () =>  {
-      fetch("/src/mockApi/truecrime.json")
+      fetch("http://localhost:3000/suspects")
         .then(response => {
           return response.json()
         })
@@ -39,8 +41,9 @@ interface ISuspect {
   //useeffect ( fetch inside & set the response to the state to log to the jsx below ( to the screen))
   useEffect(() => {
     fetchData()
-    console.log("killerState", viewKillers)
-  }, [])
+    }, [])
+
+    console.log("killerState", viewKillers) 
 
 const handleSearch = (event) => {
 storeSearchInput(event.target.value)
@@ -54,7 +57,7 @@ storeSearchInput(event.target.value)
       <input className="input" type="text"
         value={searchInput}
         onChange={handleSearch}
-        placeholder= "typeInKiller"
+        placeholder= "Type In Killer"
     />
        </div>
 
@@ -63,14 +66,12 @@ storeSearchInput(event.target.value)
       onClick={() => console.log('clicked')}>
         Search
      </button>
-        {/* <ul>
-          {viewKillers.map(user => (
-            <li key={user.id}>{user.name}</li>
-          ))}
-        </ul> */}
-      
-    </div>
-
+     <ul>
+     {viewKillers.map(suspect => (
+        <li key={suspect.id}>{suspect.name}</li>
+     ))}
+    </ul>
+      </div>
   )
 }
 

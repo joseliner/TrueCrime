@@ -1,0 +1,76 @@
+// {
+//     "suspects": [
+//         {
+//             "id": 1,
+//             "name": "Jeffrey Dahmer",
+//             "placeOfCrime": "Milwaukee, WI",
+//             "NumberOfCrimes": 17,
+//             "NumberOfVictims": 17,
+//             "DateOfCrimes": "1978-1982",
+//             "JailTime": "937 years",
+//             "DateOfIncarceration": "1992",
+//             "disorders": "antisocial personality disorder, necrophilia",
+//             "Facts": "Jeffrey Dahmer is also known as the Milwaukee Cannibal. He murdered 17 men and boys between 1978 and 1991, and was sentenced to 937 years in prison for his crimes."
+//         },
+//         {
+//             "id": 2,
+//             "name": "Ted Bundy",
+//             "placeOfCrime": "Multiple states",
+//             "NumberOfCrimes": 30,
+//             "NumberOfVictims": 30,
+//             "DateOfCrimes": "1974-1978",
+//             "JailTime": "Death",
+//             "DateOfIncarceration": "1978",
+//             "disorders": "antisocial personality disorder, psychopathy",
+//             "Facts": "Ted Bundy was an American serial killer and necrophile who murdered at least 30 young women and girls during the 1970s. He was executed in 1989."
+//         },
+//         {
+//             "id": 3,
+//             "name": "John Wayne Gacy",
+//             "placeOfCrime": "Chicago, IL",
+//             "NumberOfCrimes": 33,
+//             "NumberOfVictims": 33,
+//             "DateOfCrimes": "1972-1978",
+//             "JailTime": "Death",
+//             "DateOfIncarceration": "1978",
+//             "disorders": "antisocial personality disorder, Psychopathy",
+//             "Facts": "John Wayne Gacy was an American serial killer and rapist also known as the Killer clown, he was convicted of the sexual assault and murder of 33 young men and boys, most of whom he buried in the crawl space of his home."
+//         },
+//         {
+//             "id": 4,
+//             "name": "Aileen Wuornos",
+//             "placeOfCrime": "Florida, USA",
+//             "NumberOfCrimes": 7,
+//             "NumberOfVictims": 7,
+//             "DateOfCrimes": "1989-1990",
+//             "JailTime": "Death",
+//             "DateOfIncarceration": "1990",
+//             "disorders": "antisocial personality disorder, Borderline Personality disorder ",
+//             "Facts": "Aileen Wuornos was an American serial killer and prostitute who killed seven men in Florida between 1989 and 1990. Wuornos was sentenced to death and was executed in 2002 by lethal injection."
+//         },
+//         {
+//             "id": 5,
+//             "name": "Richard Ramirez",
+//             "placeOfCrime": "Los Angeles, CA",
+//             "NumberOfCrimes": 14,
+//             "NumberOfVictims": 14,
+//             "DateOfCrimes": "1984-1985",
+//             "JailTime": "Death",
+//             "DateOfIncarceration": "1985",
+//             "disorders": "antisocial personality disorder, schizophrenia",
+//             "Facts": "Richard Ramirez was an American serial killer, rapist, and burglar who terrorized the residents of Los Angeles in the mid-1980s, he was convicted of 13 murders and several other crimes, he was known as the Night Stalker"
+//         },
+//         {
+//             "id": 6,
+//             "name": "Edmund Kemper",
+//             "placeOfCrime": "California, USA",
+//             "NumberOfCrimes": 10,
+//             "NumberOfVictims": 10,
+//             "DateOfCrimes": "1964-1973",
+//             "JailTime": "Life without parole",
+//             "DateOfIncarceration": "1973",
+//             "disorders": "antisocial personality disorder, psychological issues",
+//             "Facts": "Edmund Kemper was an American serial killer and necrophile who killed ten people, including his paternal grandparents and mother,  between 1964 and 1973. He was sentenced to life in prison without the possibility of parole."
+//         }
+//          ]
+// }
