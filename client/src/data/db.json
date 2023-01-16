@@ -71,6 +71,91 @@
             "DateOfIncarceration": "1973",
             "disorders": "antisocial personality disorder, psychological issues",
             "Facts": "Edmund Kemper was an American serial killer and necrophile who killed ten people, including his paternal grandparents and mother,  between 1964 and 1973. He was sentenced to life in prison without the possibility of parole."
+        },
+        {
+            "id": 7,
+            "name": "David Berkowitz",
+            "placeOfCrime": "New York City, NY",
+            "NumberOfCrimes": 6,
+            "NumberOfVictims": 6,
+            "DateOfCrimes": "1976-1977",
+            "JailTime": "365 years",
+            "DateOfIncarceration": "1977",
+            "disorders": "paranoid schizophrenia",
+            "Facts": "David Berkowitz, also known as the Son of Sam, was an American serial killer who killed six people in New York City between 1976 and 1977. He was arrested in 1977 and was sentenced to 365 years in prison."
+        },
+        {
+            "id": 8,
+            "name": "Gary Ridgway",
+            "placeOfCrime": "Seattle, WA",
+            "NumberOfCrimes": 49,
+            "NumberOfVictims": 49,
+            "DateOfCrimes": "1982-1998",
+            "JailTime": "Life without parole",
+            "DateOfIncarceration": "2003",
+            "disorders": "antisocial personality disorder",
+            "Facts": "Gary Ridgway, also known as the Green River Killer, was an American serial killer who murdered at least 49 women in Washington state between 1982 and 1998. He was arrested in 2001 and was sentenced to life in prison without the possibility of parole."
+        },
+        {
+            "id": 9,
+            "name": "Jerry Brudos",
+            "placeOfCrime": "Oregon, USA",
+            "NumberOfCrimes": 4,
+            "NumberOfVictims": 4,
+            "DateOfCrimes": "1968-1969",
+            "JailTime": "Life without parole",
+            "DateOfIncarceration": "1969",
+            "disorders": "antisocial personality disorder, necrophilia",
+            "Facts": "Jerry Brudos was an American serial killer and necrophile who murdered four women in Oregon between 1968 and 1969. He was arrested in 1969 and was sentenced to life in prison without the possibility of parole."
+        },
+        {
+            "id": 10,
+            "name": "Herbert Mullin",
+            "placeOfCrime": "California, USA",
+            "NumberOfCrimes": 13,
+            "NumberOfVictims": 13,
+            "DateOfCrimes": "1972-1973",
+            "JailTime": "Life without parole",
+            "DateOfIncarceration": "1973",
+            "disorders": "schizophrenia",
+            "Facts": "Herbert Mullin was an American serial killer who murdered 13 people in California between 1972 and 1973. He was arrested in 1973 and was sentenced to life in prison without the possibility of parole."
+        },
+        {
+            "id": 11,
+            "name": "Dennis Rader",
+            "placeOfCrime": "Kansas, USA",
+            "NumberOfCrimes": 10,
+            "NumberOfVictims": 10,
+            "DateOfCrimes": "1974-1991",
+            "JailTime": "10 consecutive life sentences",
+            "DateOfIncarceration": "2005",
+            "disorders": "antisocial personality disorder",
+            "Facts": "Dennis Rader, also known as the BTK (Bind, Torture, Kill) Killer, was an American serial killer who murdered 10 people in Kansas between 1974 and 1991. He was arrested in 2005 and was sentenced to 10 consecutive life sentences."
+        },
+        {
+            "id": 12,
+            "name": "Andrei Chikatilo",
+            "placeOfCrime": "Russia",
+            "NumberOfCrimes": 56,
+            "NumberOfVictims": 56,
+            "DateOfCrimes": "1978-1990",
+            "JailTime": "Death",
+            "DateOfIncarceration": "1990",
+            "disorders": "psychopathy, schizophrenia",
+            "Facts": "Andrei Chikatilo was a Soviet serial killer and cannibal who murdered at least 56 people between 1978 and 1990. He was arrested in 1990 and was sentenced to death and executed in 1994."
+        },
+        {
+            "id": 13,
+            "name": "Peter Sutcliffe",
+            "placeOfCrime": "England",
+            "NumberOfCrimes": 13,
+            "NumberOfVictims": 13,
+            "DateOfCrimes": "1975-1980",
+            "JailTime": "20 life sentences",
+            "DateOfIncarceration": "1981",
+            "disorders": "antisocial personality disorder",
+            "Facts": "Peter Sutcliffe, also known as the Yorkshire Ripper, was an English serial killer who murdered 13 women between 1975 and 1980. He was arrested in 1981 and was sentenced to 20 life sentences."
         }
          ]
 }
+
