@@ -31,6 +31,7 @@ interface ISuspect {
     // const [searchInput, storeSearchInput] = useState([])
     const [viewKillers, saveKillers] = useState<ISuspect[]>([])
     const [searchInput, storeSearchInput] = useState("")
+    
 
     const listOfSuspectsForAutocomplete: Array<IAutoCompleteList> = [
       {
@@ -87,6 +88,8 @@ interface ISuspect {
       }
     ]
 
+    const [selectedOption, setSelectedOption] = useState<IAutoCompleteList | null>(null);
+
     const fetchData = () =>  {
       fetch("http://localhost:3000/suspects")
         .then(response => {
@@ -110,7 +113,7 @@ storeSearchInput(event.target.value)
 } 
 
 console.log(listOfSuspectsForAutocomplete, "list");
-
+console.log("selected", selectedOption);
 
   return (
     <div>
@@ -121,26 +124,27 @@ console.log(listOfSuspectsForAutocomplete, "list");
   id="combo-box-demo"
   options={listOfSuspectsForAutocomplete}
   sx={{ width: 300 }}
+  value={selectedOption}
+  onChange={(event, value) => {
+    setSelectedOption(value);
+  }}
   renderInput={(params) => <TextField {...params} label="Click to see Suspects" />}
+  // inputValue={searchInput}
+  
 />
-      <input className="input" type="text"
-        value={searchInput}
-        onChange={handleSearch}
-        placeholder= "Type In Killer"
-    />
-       </div>
-
-       <button
-      className=''
-      onClick={() => console.log('clicked')}>
-        Search
-     </button>
-     <ul>
-     {viewKillers.map(suspect => (
-        <li key={suspect.id}>{suspect.name}</li>
-     ))}
-    </ul>
-    
+      
+      </div>
+      {viewKillers.map(suspect => {
+        // For whichever name plus ID I select, it will compare it to my viewKillers suspect ID. If it matches, then it'll render below.
+            if (suspect.id === selectedOption?.id) {
+              return (
+                <div key={suspect.id}>
+                  <h2>{suspect.name}</h2>
+                  <p>Place of Crime: {suspect.placeOfCrime}</p>
+        </div>
+              )
+            }
+          })}
       </div>
   )
 }

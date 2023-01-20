@@ -8,6 +8,7 @@
     "dev-server": "webpack serve --open --config webpack.config.dev.js",
     "build-prod": "webpack --config webpack.config.prod.js",
     "prod-server": "webpack serve --open --config webpack.config.prod.js",
+    "json-server": "json-server --watch src/data/db.json",
     "lint": "npx eslint .",
     "lint-fix": "npx eslint ./src/ --fix",
     "test": "jest",
