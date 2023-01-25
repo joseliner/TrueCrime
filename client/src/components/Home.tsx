@@ -27,8 +27,6 @@ interface ISuspect {
 }
 
   //usestate
-    // const [viewKillers, saveKillers] = useState([]) 
-    // const [searchInput, storeSearchInput] = useState([])
     const [viewKillers, saveKillers] = useState<ISuspect[]>([])
     const [searchInput, storeSearchInput] = useState("")
     
@@ -116,37 +114,45 @@ console.log(listOfSuspectsForAutocomplete, "list");
 console.log("selected", selectedOption);
 
   return (
-    <div>
-       <h1>True Crime</h1>
-      <div>
-      <Autocomplete
-  disablePortal
-  id="combo-box-demo"
-  options={listOfSuspectsForAutocomplete}
-  sx={{ width: 300 }}
-  value={selectedOption}
-  onChange={(event, value) => {
-    setSelectedOption(value);
-  }}
-  renderInput={(params) => <TextField {...params} label="Click to see Suspects" />}
-  // inputValue={searchInput}
-  
-/>
-      
-      </div>
-      {viewKillers.map(suspect => {
-        // For whichever name plus ID I select, it will compare it to my viewKillers suspect ID. If it matches, then it'll render below.
-            if (suspect.id === selectedOption?.id) {
-              return (
-                <div key={suspect.id}>
-                  <h2>{suspect.name}</h2>
-                  <p>Place of Crime: {suspect.placeOfCrime}</p>
+      <div className="whole">
+         <h1>True Crime</h1>
+        <div  className="dropdown-center">
+        <Autocomplete 
+       
+    disablePortal
+    id="combo-box-demo"
+    options={listOfSuspectsForAutocomplete}
+    sx={{ width: 300 }}
+    value={selectedOption}
+    onChange={(event, value) => {
+      setSelectedOption(value);
+    }}
+    renderInput={(params) => <TextField {...params} label="Click to see Suspects" />}
+    // inputValue={searchInput}
+    
+  />
+    
         </div>
-              )
-            }
-          })}
-      </div>
-  )
+        {viewKillers.map(suspect => {
+          // For whichever name plus ID I select, it will compare it to my viewKillers suspect ID. If it matches, then it'll render below.
+              if (suspect.id === selectedOption?.id) {
+                return (
+                  <div key={suspect.id}>
+                    <h2>{suspect.name}</h2>
+                    <p>Place of Crime: {suspect.placeOfCrime}</p>
+                    <p>Number of Crimes: {suspect.NumberOfCrimes}</p>
+                    <p>Number of Victims: {suspect.NumberOfVictims}</p>
+                    <p>Date of Crimes: {suspect.DateOfCrimes}</p>
+                    <p>Jail Time: {suspect.JailTime}</p>
+                    <p>Date of Incarceration: {suspect.DateOfIncarceration}</p>
+                    <p>Disorders: {suspect.disorders}</p>
+                    <p>Facts: {suspect.Facts}</p>
+          </div>
+                )
+              }
+            })}
+        </div>
+  );
 }
 
 

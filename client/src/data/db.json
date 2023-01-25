@@ -2,6 +2,7 @@
     "suspects": [
         {
             "id": 1,
+            "image": "./",
             "name": "Jeffrey Dahmer",
             "placeOfCrime": "Milwaukee, WI",
             "NumberOfCrimes": 17,
