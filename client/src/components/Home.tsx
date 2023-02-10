@@ -15,6 +15,7 @@ export const Home: React.FC = () => {
    //Type definition for suspect
 interface ISuspect {
   id: number;
+  image: string;
   name: string;
   placeOfCrime: string;
   NumberOfCrimes: number;
@@ -139,6 +140,7 @@ console.log("selected", selectedOption);
                 return (
                   <div key={suspect.id}>
                     <h2>{suspect.name}</h2>
+                    <p>image: <img src={suspect.image}  alt="picture of suspect"/></p>
                     <p>Place of Crime: {suspect.placeOfCrime}</p>
                     <p>Number of Crimes: {suspect.NumberOfCrimes}</p>
                     <p>Number of Victims: {suspect.NumberOfVictims}</p>

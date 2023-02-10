@@ -2,7 +2,7 @@
     "suspects": [
         {
             "id": 1,
-            "image": "./",
+            "image": "",
             "name": "Jeffrey Dahmer",
             "placeOfCrime": "Milwaukee, WI",
             "NumberOfCrimes": 17,
@@ -15,6 +15,7 @@
         },
         {
             "id": 2,
+            "image": "/images/ted.jpg",
             "name": "Ted Bundy",
             "placeOfCrime": "Multiple states",
             "NumberOfCrimes": 30,
