@@ -3,7 +3,7 @@ import './Home.css'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 /* eslint-disable */
-
+import { Example } from './Example';
 
 export const Home: React.FC = () => {
 
@@ -134,6 +134,7 @@ console.log("selected", selectedOption);
   />
     
         </div>
+        
         {viewKillers.map(suspect => {
           // For whichever name plus ID I select, it will compare it to my viewKillers suspect ID. If it matches, then it'll render below.
               if (suspect.id === selectedOption?.id) {
@@ -153,6 +154,7 @@ console.log("selected", selectedOption);
                 )
               }
             })}
+                    <Example/>
         </div>
   );
 }
