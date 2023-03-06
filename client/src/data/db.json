@@ -2,7 +2,7 @@
     "suspects": [
         {
             "id": 1,
-            "image": "",
+            "image": "/images/JeffreyDahmer.jpg",
             "name": "Jeffrey Dahmer",
             "placeOfCrime": "Milwaukee, WI",
             "NumberOfCrimes": 17,
@@ -28,6 +28,7 @@
         },
         {
             "id": 3,
+            "image": "/images/johngacy.jpg",
             "name": "John Wayne Gacy",
             "placeOfCrime": "Chicago, IL",
             "NumberOfCrimes": 33,
@@ -40,6 +41,7 @@
         },
         {
             "id": 4,
+            "image": "/images/aileen.jpg",
             "name": "Aileen Wuornos",
             "placeOfCrime": "Florida, USA",
             "NumberOfCrimes": 7,
@@ -52,6 +54,7 @@
         },
         {
             "id": 5,
+            "image": "/images/richard.jpg",
             "name": "Richard Ramirez",
             "placeOfCrime": "Los Angeles, CA",
             "NumberOfCrimes": 14,
@@ -64,6 +67,7 @@
         },
         {
             "id": 6,
+            "image": "/images/edmund.jpg",
             "name": "Edmund Kemper",
             "placeOfCrime": "California, USA",
             "NumberOfCrimes": 10,
@@ -76,6 +80,7 @@
         },
         {
             "id": 7,
+            "image": "/images/david.jpg",
             "name": "David Berkowitz",
             "placeOfCrime": "New York City, NY",
             "NumberOfCrimes": 6,
@@ -88,6 +93,7 @@
         },
         {
             "id": 8,
+            "image": "/images/gary.jpg",
             "name": "Gary Ridgway",
             "placeOfCrime": "Seattle, WA",
             "NumberOfCrimes": 49,
@@ -100,6 +106,7 @@
         },
         {
             "id": 9,
+            "image": "/images/jerry.jpg",
             "name": "Jerry Brudos",
             "placeOfCrime": "Oregon, USA",
             "NumberOfCrimes": 4,
@@ -112,6 +119,7 @@
         },
         {
             "id": 10,
+            "image": "/images/herbert.jpg",
             "name": "Herbert Mullin",
             "placeOfCrime": "California, USA",
             "NumberOfCrimes": 13,
@@ -124,6 +132,7 @@
         },
         {
             "id": 11,
+            "image": "/images/dennis.jpg",
             "name": "Dennis Rader",
             "placeOfCrime": "Kansas, USA",
             "NumberOfCrimes": 10,
@@ -136,6 +145,7 @@
         },
         {
             "id": 12,
+            "image": "/images/andrei.jpg",
             "name": "Andrei Chikatilo",
             "placeOfCrime": "Russia",
             "NumberOfCrimes": 56,
@@ -148,6 +158,7 @@
         },
         {
             "id": 13,
+            "image": "/images/peter2.jpg",
             "name": "Peter Sutcliffe",
             "placeOfCrime": "England",
             "NumberOfCrimes": 13,
