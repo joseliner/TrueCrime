@@ -140,8 +140,9 @@ console.log("selected", selectedOption);
               if (suspect.id === selectedOption?.id) {
                 return (
                   <div key={suspect.id}>
+                    <img className="suspect-image" src={suspect.image} alt={suspect.name} />
                     <h2>{suspect.name}</h2>
-                    <p>image: <img src={suspect.image}  alt="picture of suspect"/></p>
+                    {/* <p>image: <img src={suspect.image}  alt="picture of suspect"/></p> */}
                     <p>Place of Crime: {suspect.placeOfCrime}</p>
                     <p>Number of Crimes: {suspect.NumberOfCrimes}</p>
                     <p>Number of Victims: {suspect.NumberOfVictims}</p>

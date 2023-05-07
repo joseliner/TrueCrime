@@ -1,5 +1,16 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: aqua;
+}
+
 h1 {
     text-align: center;
+    padding: 5px;
+    margin: 10px;
     }
 
 .dropdown-center{
@@ -7,7 +18,29 @@ h1 {
   justify-content: center;
 }
 
-.whole{
-    background-color: aqua;
-    height: 100vh;
+button {
+  background-color: white;
+}
+
+.suspect-image {
+  width: 250px;
+  height: 250px;
+}
+
+.MuiOutlinedInput-notchedOutline, .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  background-color: white;
+}
+
+.MuiFormLabel-root{
+  background-color: white;
+}
+
+.MuiAutocomplete-root, .MuiAutocomplete-hasPopupIcon, .css-gcwvw8-MuiAutocomplete-root {
+   border-style: solid;
+   border-color: black;
+   border-radius: 5px;
+}
+
+.MuiInputBase-root, .MuiOutlinedInput-root, .MuiInputBase-colorPrimary, .MuiInputBase-fullWidth, .MuiInputBase-formControl, .MuiInputBase-adornedEnd, .MuiAutocomplete-inputRoot, .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root{
+  background-color: white;
 }
