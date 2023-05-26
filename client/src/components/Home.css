@@ -5,6 +5,7 @@
 }
 body {
   background-color: aqua;
+  text-align: center;
 }
 
 h1 {
@@ -22,9 +23,15 @@ button {
   background-color: white;
 }
 
+p {
+  margin: 5px;
+  word-wrap: break-word;
+}
+
 .suspect-image {
   width: 250px;
   height: 250px;
+  margin: 10px;
 }
 
 .MuiOutlinedInput-notchedOutline, .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
