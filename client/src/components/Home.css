@@ -33,6 +33,7 @@ p {
   width: 250px;
   height: 250px;
   margin: 10px;
+  border-radius: 50%;
 }
 
 .MuiOutlinedInput-notchedOutline, .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
